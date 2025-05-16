@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulador CDI com IR</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+
+  <h1>Simulador CDI com IR</h1>
+
+  <label for="valor">Valor Investido (R$):</label>
+  <input type="number" id="valor" placeholder="Ex: 1000">
+
+  <label for="porcentagem">Porcentagem do CDI (%):</label>
+  <input type="number" id="porcentagem" placeholder="Ex: 100 para 100% do CDI">
+
+  <label for="cdi">CDI Anual Atual (%):</label>
+  <input type="number" id="cdi" placeholder="Ex: 10.65">
+
+  <label for="prazo">Prazo da Aplicação (em dias):</label>
+  <input type="number" id="prazo" placeholder="Ex: 360">
+
+  <button onclick="calcularRendimento()">Calcular Rendimento</button>
+
+  <div class="resultado" id="resultado" style="display:none;"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
